@@ -1,1 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 
+header{
+    height:20vh;
+    background-color:#87CEEB;
+    font-size:40px ;
+    font-weight:bold ;
+    padding-top:10px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+section {
+    display:flex;
+    flex-wrap: wrap;
+}
+.boxleft,.boxmiddle,.boxright{
+    display: flex;
+    flex-wrap: wrap;
+    flex:33%;
+    height: 20vh;
+    text-align: center;
+    justify-content: center;
+    font-weight:bold;
+}
+
+section .boxleft{
+    background-color:#FF7F50;
+    font-size:40px ;
+    padding-top:10px;
+    
+}
+section .boxmiddle{
+    background-color:#CF9FFF;
+    font-size:40px ;
+    padding-top:10px;
+    
+}
+section .boxright{
+    
+    background-color:  #ffcccb;
+    font-size:40px ;
+    padding-top:10px;
+    
+}
+.navigation nav
+{
+      height:30px;
+      width:200px;
+      background-color:#000000 ;
+      background-image:url(./images/spriteimage.svg);
+      float:right;
+      background-position:0px 45px;
+}
+.signup{
+    display: flex;
+    height:60px;
+    background-color: #90ee90;
+    text-align: center;
+    justify-content: center;
+}
+.content
+{
+    height:60px;
+    background-color:#808080;
+    text-align: center;
+}
+
+@media (min-width:320px) and (max-width:480px)  { 
+    .boxleft,.boxmiddle,.boxright,.content,.signup{
+        flex: 100%;
+   }
+    
+}
+@media (min-width:481px) and (max-width:768px){
+    .boxleft,.boxmiddle,.boxright,.content,.signup{
+        flex: 50%;
+    }
+  }
