@@ -1,1 +1,109 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+    
+    .center 
+    {
+        margin-left: auto; 
+        margin-right: auto;
+        height:600px;
+        width:50%;
+        border:4px solid #000000;
+    }
+    tr:nth-child(1)
+    {
+        background-color:#FFFF00 ;
+    
+    }
+    tr:nth-child(10)
+    {
+        background-color:#FFFF00 ;
+    
+    }
+    th
+    {
+        color:#FFFF00 ;
+        font-size:30px;
+    }
+    tr
+    {
+        background-color:#000000;
+    }
+    .hobbies{
+        font-size:20px;
+    }
+    .gender{
+        font-size:20px; 
+    }
+    .submitbutton
+    {
+        font-size: 30px;
+        
+    }
+  </style>
+</head>
+<body>
+ <form>
+    <table  class="center">
+     <tr>
+            <th colspan="4" style="color:#000000" >FORM</th>
+        </tr>
+        <tr>
+            <th> Name :</th>
+            <th><input type="text"></th> 
+        </tr>
+        <tr>
+            <th> Mobile Number :</th>
+            <th><input type="number"> </th>
+        </tr>
+        <tr>
+            <th> Email :</th>
+            <th> <input type="email"> </th>
+        </tr>
+        <tr>
+            <th>Gender : </th>
+            <th><input type="radio" name="gender"><span class="gender">Male</span>
+                <input type="radio" name="gender"><span class="gender">Female</span>
+            </th>
+        </tr>
+        <tr>
+            <th>  Date Of Birth:</th>
+            <th><input type="date"></th>
+        </tr>
+        <tr>
+            <th>Department :</th>
+            <th>
+                 <select name="dept" id="dept" multiple>
+                  <option value="cse">CSE</option>
+                  <option value="IT">IT</option>
+                  <option value="ece">ECE</option>
+                  <option value="eee">EEE</option>
+                  <option value="mech">MECH</option>
+                  <option value="auto">AUTO</option>
+                 </select>
+            </th>
+        </tr>
+        <tr >
+            <th>Hobbies :</th>
+            <th><input type="checkbox" name="hobby1"><span class="hobbies">Cricket</span>
+                <input type="checkbox" name="hobby2"><span class="hobbies">Football</span>
+                <input type="checkbox" name="hobby3"><span  class="hobbies">Hockey</span>
+        </tr>
+        <tr>
+            <th>Address :</th>
+            <th><textarea  rows="6" cols="45"></textarea></th>
+        </tr>
+        <tr>
+            <th colspan="2" style="color:#000000">
+                <input type="submit" class="submitbutton">
+            </th>
+        </tr>
+    </table>
+ </form>
+</body>
+</html>
