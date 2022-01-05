@@ -79,3 +79,92 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="text/javascript" src="script.js"></script>
+    <form onsubmit="onFormSubmit()">
+    <table class="center" >
+     <tr class="row" >
+            <th colspan="4" >FORM</th>
+        </tr>
+        <tr class="row">
+            <th> Name :</th>
+            <th><input type="text" id="name"></th> 
+        </tr>
+        <tr class="row">
+            <th> Mobile Number :</th>
+            <th><input type="number" id="mobileno"> </th>
+        </tr>
+        <tr class="row">
+            <th> Email :</th>
+            <th> <input type="email" id="email"> </th>
+        </tr>
+        <tr class="row">
+            <th>Gender : </th>
+            <th><input type="radio" name="gender" id="male"><span class="gender">Male</span>
+                <input type="radio" name="gender" id="female"><span class="gender">Female</span>
+            </th>
+        </tr>
+        
+        <tr>
+            <th>  Date Of Birth:</th>
+            <th><input type="date"></th>
+        </tr>
+        <tr>
+            <th>Department :</th>
+            <th>
+                 <select name="dept" id="dept" multiple>
+                  <option value="cse">CSE</option>
+                  <option value="IT">IT</option>
+                  <option value="ece">ECE</option>
+                  <option value="eee">EEE</option>
+                  <option value="mech">MECH</option>
+                  <option value="auto">AUTO</option>
+                 </select>
+            </th>
+        </tr>
+        <tr >
+            <th>Hobbies :</th>
+            <th><input type="checkbox" name="hobby1"><span class="hobbies">Cricket</span>
+                <input type="checkbox" name="hobby2"><span class="hobbies">Football</span>
+                <input type="checkbox" name="hobby3"><span  class="hobbies">Hockey</span>
+        </tr>
+        <tr>
+            <th>Address :</th>
+            <th><textarea  rows="6" cols="45"></textarea></th>
+        </tr>
+        <tr id="btna">
+            <td colspan="2"><input type="submit" name="button" id="btn" value="Submit" ></td>
+        </tr>
+    </table>
+</form>
+ 
+ <table border="4" id="register">
+    <td>
+        <tr class="row">
+            <th>Name</th>
+            <th>Mobile number</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Date Of Birth</th>
+            <th>Department</th>
+            <th>Hobbies</th>
+            <th>Address</th>
+       </tr>
+        <tbody>
+
+        </tbody>
+    </td>
+</table>
+
+
+</body>
+</html>
