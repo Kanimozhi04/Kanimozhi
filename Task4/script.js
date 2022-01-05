@@ -1,4 +1,4 @@
-       var list1 = [];
+               var list1 = [];
 		var list2 = [];
 		var list3 = [];
 		var list4 = [];
@@ -29,3 +29,4 @@
 			n++;
 			x++;
 		}
+			
