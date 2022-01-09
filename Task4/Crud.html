@@ -2,7 +2,6 @@
 <head>
     <title>Crud Operation</title>
     <link type="text/css" rel="stylesheet" href="./style.css">
-    
 </head>
 
 <body>
@@ -10,54 +9,48 @@
     <table>
         <tr>
             <td>
-                <form  onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <form   onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+                        <p>Name</p>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required >
                     </div>
                     <div>
-                        <label for="mobileno">Mobile Number</label>
-                        <input type="number" name="mobileno" id="mobileno">
+                        <p>Mobile Number</p>
+                        <input type="number" name="mobileno" id="mobileno" placeholder="Enter your Mobile number" required>
 
                     </div>
                     <div>
-                        <label for="mailid">Email</label>
-                        <input type="email" name="email" id="email">
+                         <p>Email</p>
+                        <input type="email" name="mailid" id="email" placeholder="Enter your Maild Id" required>
                     </div>
-                    <!----
                     <div>
                        <p>Gender</p>
                        <input type="radio" id="male" name="gender" value="male">
                        <label for="male">Male</label>
-                       <input type="radio" id="female" name="gender" value="female">
+                       <input type="radio" id="male" name="gender" value="female">
                        <label for="female">Female</label>
                        <input type="radio" id="other" name="gender" value="other">
                        <label for="Others">Others</label>
-                    </div>-->
-                    <div>
-                        <label for="date">Date of Birth</label>
-                        <input type="date" name="dob" id="dob">
                     </div>
                     <div>
+                        <p>Date of Birth</p>
+                        <input type="date" name="dob" id="dob" required>
+                    </div>
+                    <div > 
                         <p>Department</p>
-                        <select name="dept" id="dept" multiple>
-                            <option value="cse">CSE</option>
-                            <option value="IT">IT</option>
-                            <option value="ece">ECE</option>
-                            <option value="eee">EEE</option>
-                            <option value="mech">MECH</option>
-                            <option value="auto">AUTO</option>
+                        <select name="dept" id="dept" required>
+                            <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Electronics and Communications Engineering">Electronics and Communications Engineering</option>
+                            <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering </option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Automobile engineering">Automobile engineering</option>
                            </select>
                     </div>
-                <!----
+                    
                     <div>
-                        <p>Hobbies</p>
-                          <input type="checkbox" name="hobby1"><span class="hobbies">Cricket
-                          <input type="checkbox" name="hobby2"><span class="hobbies">Football
-                          <input type="checkbox" name="hobby3"><span  class="hobbies">Hockey
-                    </div>-->
-                    <div>
-                        <textarea rows="6" cols="45" id="address">Address</textarea>
+                        <p>Address</p>
+                        <textarea rows="6" cols="41" id="address" placeholder="Enter your Address" required></textarea>
                     </div>
                     <div >
                         <input type="submit" value="Submit">
@@ -66,16 +59,17 @@
                 </form>
 
                 <td>
-                    <table class="list" id="register">
+                    <table class="list" id="register" border="4">
                         <thead>
                             <tr>
                                 <th>Name</th>
                                 <th>Mobile number</th>
                                 <th>Email</th>
+                                <th>Gender</th>
                                 <th>Date Of Birth</th>
                                 <th>Department</th>
-                               
                                 <th>Address</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
