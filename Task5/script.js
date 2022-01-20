@@ -1,8 +1,8 @@
-let i = 0; // current slide
-let j = 6; // total slides
+var dots = document.querySelectorAll(".dot-container button");
+var images = document.querySelectorAll(".image-container img");
 
-const dots = document.querySelectorAll(".dot-container button");
-const images = document.querySelectorAll(".image-container img");
+var  i = 0; 
+var j = images.length; 
 
 function next(){
     document.getElementById("content" + (i+1)).classList.remove("active");
