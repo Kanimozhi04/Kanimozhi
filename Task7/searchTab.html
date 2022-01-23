@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+  <head>
+      <title>Search Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+        <header class="container">
+            <h1>Latest <i class="fa fa-laptop" style="font-size:60px;color:#8B0000"></i>Laptops,
+                <i class="fa fa-mobile-phone" style="font-size:60px;color:#8B0000"></i>Mobiles And 
+                <i class="fa fa-clock-o" style="font-size:60px;color:#8B0000"></i>Watches
+            </h1>
+            <div>
+                <form onsubmit="return false">
+                <table class="search_box">
+                  <tr>
+                    <td>
+                       <input type="search" id="search" placeholder="Search Products Here" autocomplete="off">
+                       <a href="#"><i class="material-icons" >search</i></a>
+                    </td>
+                  </tr>
+                </table>
+                </form>
+             </div>
+         </header>
+          <section  class="container" id="products">
+              <div class="product_lap">
+                  <img src="Images/HP15.jpg">
+                  <div class="product-details" class="btn" data-filter="Laptop">
+                      <h2>Laptop HP15</h2>
+                      <h3>&#8377 41,990.00</h3>
+                      <h5>HP 15 (2021) AMD Ryzen 3-3250 8 GB RAM, 1TB HDD + 256GB SSD, 15.6 inches FHD Screen, Windows 10, MS Office Thin & Light Laptop, 1.82kg (15s-gr0012AU), Silver</h5>
+                  </div>
+              </div>
+              <div class="product_lap">
+                <img src="Images/ASUS_VivoBook.jpg">
+                <div class="product-details" class="btn" data-filter="Laptop" >
+                    <h2>Laptop ASUS VivoBook</h2>
+                    <h3>&#8377  43,000</h3>
+                    <h5>ASUS VivoBook15 Intel Core i3-1115G4 15.6 inches Laptop (8GB RAM/256 GB NVMe SSD/Windows 10 Home+McAfee/Ms Office H&S 2019/FHD IPS/FP Reader/1.75 kg/Silver) X515EA-EJ312TS</h5>
+                </div>
+              </div>
+              <div class="product_lap">
+                <img src="Images/Acer_Aspire.jpg" >
+                <div class="product-details" class="btn" data-filter="Laptop">
+                    <h2>Laptop Acer Aspire</h2>
+                    <h3>&#8377  65,999</h3>
+                    <h5>Acer Aspire 5 Thin And Light Laptop Intel Core I5 11th Gen (8GB/1 TB HDD/ Windows 11 Home) A515-56 With 39.6 Cm (15.6 Inch) With FHD Display / 1.65 Kgs</h5>
+                </div>
+              </div>
+              <div class="product_mobile">
+                <img src="Images/apple_Iphone.webp">
+                <div class="product-details" class="btn" data-filter="mobile,iphone">
+                    <h2>Apple Iphone 11 64GB</h2>
+                    <h3>&#8377 37,999</h3>
+                </div>
+              </div>
+              <div class="product_lap">
+                <img src="Images/leneno_IdeaPad.jpg">
+                 <div class="product-details" class="btn" data-filter="Laptop">
+                    <h2>leneno IdeaPad</h2>
+                    <h3>&#8377 39,790</h3>
+                    <h5>Lenovo IdeaPad Slim 3 10th Gen Intel Core i3 15.6"(39.62cm) FHD Thin & Light Laptop (8GB/256GB SSD/UHD Graphics/Windows 11/MS Office 2021/Platinum Grey/1.7Kg), 81WB0193IN</h5>
+                 </div>
+              </div>
+            <div class="product_watch">
+                <img src="Images/Smartwatch.webp">
+                <div class="product-details" class="btn" data-filter="watch">
+                    <h2>Smartwatch</h2>
+                    <h3>&#8377 2,299</h3>
+                </div>
+            </div>
+            <div class="product_mobile">
+                <img src="Images/Smart_mobile.webp">
+                <div class="product-details" class="btn" data-filter="mobile ,watch">
+                    <h2>Smart Phone + Watch</h2>
+                    <h3>&#8377 2,299</h3>
+                    <h5>Fit AmazfIt SMART MOBILE 4G BLUETOOTH WATCHPHONE Smartwatch  (Black Strap, free)</h5>
+                </div>
+            </div>
+            <div class="product_mobile">
+                <img src="Images/Vivo.webp">
+                <div class="product-details" class="btn" data-filter="mobile">
+                    <h2>Android Mobile Phone</h2>
+                    <h3>&#8377 18,499</h3>
+                    <h5>VIVO V17 PRO (GLACIER ICE WHITE, 8GB+128GB)</h5>
+                    
+                </div>
+            </div>
+            <div class="product_watch">
+                <img src="Images/watch.png">
+                <div class="product-details" class="btn" data-filter="watch,mobile">
+                    <h2>Smart Phone + Watch</h2>
+                    <h3>&#8377 5000</h3>
+                </div>
+            </div>
+        </section>
+            <script src="script.js"></script>
+ </body>
+</html>
