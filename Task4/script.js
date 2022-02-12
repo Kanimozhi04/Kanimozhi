@@ -18,7 +18,7 @@ function readData(){
     formData["gender"] = document.querySelector('input[name=gender]:checked').value;
     formData["dob"] = document.getElementById("dob").value;
     formData["dept"] = document.getElementById("dept").value;
-	   formData["address"] = document.getElementById("address").value
+    formData["address"] = document.getElementById("address").value
     return formData;
 }
 
@@ -33,7 +33,7 @@ function insertRecord(data){
     var cell3 = newRow.insertCell(2);
         cell3.innerHTML = data.email;
     var cell4=newRow.insertCell(3);
-	       cell4.innerHTML=data.gender;
+	cell4.innerHTML=data.gender;
     var cell5 = newRow.insertCell(4);
         cell5.innerHTML = data.dob;
     var cell6= newRow.insertCell(5);
@@ -51,7 +51,7 @@ function onEdit(td){
     document.getElementById('mobileno').value = selectedRow.cells[1].innerHTML;
     document.getElementById('email').value = selectedRow.cells[2].innerHTML;
     document.querySelector('input[name=gender]:checked').value=selectedRow[3].innerHTML;
-   	document.getElementById('dob').value = selectedRow.cells[4].innerHTML;
+    document.getElementById('dob').value = selectedRow.cells[4].innerHTML;
     document.getElementById('dept').value = selectedRow.cells[5].innerHTML;
     document.getElementById('address').value = selectedRow.cells[6].innerHTML;
 }
@@ -60,7 +60,7 @@ function updateRecord(formData){
     selectedRow.cells[0].innerHTML = formData.name;
     selectedRow.cells[1].innerHTML = formData.mobileno;
     selectedRow.cells[2].innerHTML = formData.email;
-	   selectedRow.cells[3].innerHTML = formData.gender;
+    selectedRow.cells[3].innerHTML = formData.gender;
     selectedRow.cells[4].innerHTML = formData.dob;
     selectedRow.cells[5].innerHTML = formData.dept;
     selectedRow.cells[6].innerHTML = formData.address;
@@ -80,7 +80,7 @@ function resetForm(){
     document.getElementById('name').value = '';
     document.getElementById('mobileno').value = '';
     document.getElementById('email').value = '';
-	   document.querySelector('input[name=gender]:checked').value='';
+    document.querySelector('input[name=gender]:checked').value='';
     document.getElementById('dob').value = '';
     document.getElementById('dept').value = '';
     document.getElementById('address').value = '';
