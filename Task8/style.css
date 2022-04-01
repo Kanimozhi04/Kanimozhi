@@ -1,0 +1,26 @@
+*{
+    margin:0;
+}
+body{
+    background: linear-gradient(
+        125deg,
+        #8052ec,
+        #d161ff
+   );
+}
+.header{
+    text-align: center;
+    padding-top:15px;
+}
+.container{
+   padding: 25px;
+   margin:25px;
+}
+#img,#imgDetails{
+    font-size: 20px;
+    padding: 10px;
+}
+#submit{
+    font-size: 20px;
+    padding: 10px;
+}
