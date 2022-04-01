@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Sign in</title>
+        <style>
+            input{
+                outline: none;
+                border:none;
+                padding: 10px;
+            }
+            body{
+                background: linear-gradient(
+                125deg,
+               #8052ec,
+               #d161ff
+              );
+            }
+            .sign-up{
+                text-align: center;
+            }
+            .btn{
+                background-color: #ff0000;
+                border: none;
+                color: #FFFFFF;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+               cursor: pointer;
+            }
+            #anchor_color{
+                color: #00008B;
+            }
+            
+        </style>
+    </head>
+    <body>
+      <form  class="detail" action="toDoList.html">
+        <table align="center">
+            <tr><th><h1>Login Form</h1></th></tr>
+            <tr>
+                <th>Username:</th><td><input type="text" id="username" name="uname" placeholder="Enter ur name" required></td>
+            </tr>
+            <tr>
+                <th>Password:</th><td><input type="password" id="password" name="pwd" placeholder="Enter ur password" required></td>
+            </tr>
+            <tr>
+                <th><input type="submit" class="btn"></th>
+            </tr>
+        </table>
+        <div class="sign-up">
+            <h3>If you Don't have an account,<a href="signup.html" target="_blank" id="anchor_color">Sign Up</a></h3>
+        </div>
+    </form>
+    <script src="login_script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+       input{
+                outline: none;
+                border:none;
+                padding: 10px;
+            }
+            body{
+                background: linear-gradient(
+                125deg,
+               #8052ec,
+               #d161ff
+              );
+            }
+            
+            .sign-up{
+                text-align: center;
+            } 
+            .btn{
+            
+                 background-color: #ff0000;
+                 border: none;
+                 color:#FFFFFF ;
+                 padding: 15px 32px;
+                 text-align: center;
+                 text-decoration: none;
+                 display: inline-block;
+                 font-size: 15px;
+                 margin: 4px 2px;
+                cursor: pointer;
+              }   
+    </style>
+
+</head>
+<body>
+    <form class="detail" action="login.html" target="_blank">
+        <table align="center">
+            <tr><th><h1>Sign Up  Form</h1></th></tr>
+            <tr>
+                <th>Username:</th><td><input type="text" id="username" name="uname" placeholder="Enter ur name" required></td>
+            </tr>
+            <tr>
+                <th>Password:</th><td><input type="password" id="password"  name="pwd" placeholder="Enter ur password" required></td>
+            </tr>
+            <tr>
+                <th>Re-Password:</th><td><input type="password" id="re-password"  name="pwd" placeholder="Re-enter ur password" required></td>
+            </tr>
+            <tr>
+                <th><input  type="submit" class="btn"></th>
+            </tr>
+        </table>
+    </form>
+    <script src="signup_script.js"></script>
+</body>
+</html>
