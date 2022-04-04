@@ -36,9 +36,9 @@ function filterProducts(e) {
     productName.forEach(function(product) {
         const item = product.firstChild.textContent;
         if (item.toLowerCase().indexOf(text) != -1) {
-            product.parentElement.parentElement.style.display = "block"
+            product.parentElement.style.display = "block"
         } else {
-            product.parentElement.parentElement.style.display = "none"
+            product.parentElement.style.display = "none"
         }
     })
 }
