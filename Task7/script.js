@@ -19,7 +19,7 @@ for (var i = 0; i < btns.length; i++) {
             }
         });
     });
-};
+}
 
 // Search Filter
 var search = document.getElementById("search");
