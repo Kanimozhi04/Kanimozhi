@@ -1,22 +1,26 @@
 var btns = document.querySelectorAll('.btn');
 var storeProducts = document.querySelectorAll('.store-product');
-for (var i = 0; i < btns.length; i++) {
+for (var i = 0; i < btns.length; i++) 
+{
     btns[i].addEventListener('click', (e) => {
-    e.preventDefault()
-        
-        const filter = e.target.dataset.filter;
-        console.log(filter);
-        
-        storeProducts.forEach((product)=> {
-            if (filter == ''){
-                product.style.display = 'block'
-            } else {
-                if (product.classList.contains(filter)){
-                    product.style.display = 'block'
-                } else {
+    e.preventDefault();
+    const filter = e.target.dataset.filter;
+    console.log(filter);
+    storeProducts.forEach((product)=> {
+     if (filter == '')
+     {
+        product.style.display = 'block';
+     }
+     else 
+      {
+          if (product.classList.contains(filter))
+          {
+                 product.style.display = 'block'
+          } else 
+          {
                     product.style.display = 'none'
-                }
-            }
+           }
+       }
         });
     });
 }
