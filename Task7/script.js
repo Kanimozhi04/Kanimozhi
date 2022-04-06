@@ -15,10 +15,11 @@ for (var i = 0; i < btns.length; i++)
       {
           if (product.classList.contains(filter))
           {
-                 product.style.display = 'block'
-          } else 
+                 product.style.display = 'block';
+          } 
+          else 
           {
-                    product.style.display = 'none'
+                    product.style.display = 'none';
            }
        }
         });
