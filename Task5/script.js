@@ -19,8 +19,8 @@ function prev(){
 }
 
 function indicator(num){
-    dots.forEach(function(dot){
-        dot.style.backgroundColor = "transparent";
+    dots.forEach(function(dotimage){
+        dotimage.style.backgroundColor = "transparent";
     });
     document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec";
 }
