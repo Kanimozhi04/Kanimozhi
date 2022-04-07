@@ -69,7 +69,7 @@ function updateRecord(formData){
 //Delete the data
 function onDelete(td){
     if(confirm('Are you  Sure! You want to delete this record?')){
-        row = td.parentElement.parentElement;
+        var row = td.parentElement.parentElement;
         document.getElementById('register').deleteRow(row.rowIndex);
     }
     resetForm();
